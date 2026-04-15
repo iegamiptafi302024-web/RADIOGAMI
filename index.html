@@ -2,123 +2,53 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>RADIOGAMI - Guardianes de la historia</title>
+<title>RADIOGAMI - Guardianes de tu opinión</title>
 
 <style>
 body {
+    font-family: Arial;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #eef2f7;
+    background: #f4f6f9;
 }
 
-/* HEADER */
+/* ENCABEZADO */
 header {
-    background: linear-gradient(90deg, #1f3c5a, #274c77);
+    background: #1f3c5a;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 60px;
-    margin-right: 15px;
-}
-
-.btn-radio {
-    background: #ffb703;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
+    text-align: center;
+    padding: 20px;
 }
 
 /* MENÚ */
 nav {
     background: #16324f;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
 }
 
 nav a {
     color: white;
-    margin: 0 12px;
+    margin: 0 10px;
     text-decoration: none;
 }
 
-/* DESTACADO */
-.destacado {
-    background: #ffb703;
-    padding: 12px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* CONTENIDO */
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* NOTICIA PRINCIPAL */
-.principal {
+/* SECCIONES */
+section {
     background: white;
-    padding: 15px;
-    border-radius: 12px;
-}
-
-.principal img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-.principal button {
-    background: #1f3c5a;
-    color: white;
-    padding: 8px 15px;
-    border: none;
+    margin: 20px;
+    padding: 20px;
     border-radius: 10px;
 }
 
-/* LATERAL */
-.lateral {
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
+/* NOTICIAS */
+.noticia {
+    margin-bottom: 20px;
 }
 
-/* SECCIONES */
-.secciones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* RADIO */
-.radio {
-    background: #dbeafe;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 12px;
-    text-align: center;
+.noticia img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
 /* FOOTER */
@@ -126,75 +56,58 @@ footer {
     background: #1f3c5a;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <div class="logo">
-        <img src="logo.png" alt="Logo Colegio">
-        <div>
-            <h1>🎙️ RADIOGAMI</h1>
-            <p>Guardianes de tu opinión</p>
-        </div>
-    </div>
-    <button class="btn-radio">🔴 EN VIVO</button>
+    <h1>🎙️ RADIOGAMI</h1>
+    <p>Guardianes de tu opinión</p>
 </header>
 
 <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Noticias</a>
-    <a href="#">Opinión</a>
-    <a href="#">Cultura</a>
-    <a href="#">Eco-Gami</a>
-    <a href="#">Entrevistas</a>
-    <a href="#">Tecno-Gami</a>
+    <a href="#noticias">Noticias</a>
+    <a href="#opinion">Opinión</a>
+    <a href="#eco">Eco-GAMI</a>
 </nav>
 
-<div class="destacado">
-🚨 EDICIÓN DESTACADA: Guardianes de 4° lideran el cambio ambiental 🌱
-</div>
+<!-- 📰 NOTICIAS -->
+<section id="noticias">
+    <h2>📰 Noticias</h2>
 
-<div class="container">
-
-    <div class="principal">
-        <img src="https://via.placeholder.com/600x300">
-        <h2>¿Por qué mi voz sí importa en el colegio?</h2>
-        <p>Estudiantes fortalecen liderazgo, respeto y participación escolar.</p>
-        <button>Leer más</button>
+    <!-- COPIA ESTE BLOQUE PARA NUEVAS NOTICIAS -->
+    <div class="noticia">
+        <h3>Estudiantes lideran proyectos de mediación</h3>
+        <img src="estudiantes.jpg">
+        <p>Los estudiantes fortalecen el respeto y la convivencia a través del diálogo.</p>
     </div>
 
-    <div class="lateral">
-        <h3>🔥 Lo más leído</h3>
-        <p>📚 Nuevos libros en la biblioteca</p>
-        <p>🌳 Nuestro árbol cumple 20 años</p>
-        <p>🎧 Música que une generaciones</p>
+    <div class="noticia">
+        <h3>Actividad ambiental en la huerta escolar</h3>
+        <img src="estudiantes.jpg">
+        <p>Los niños aprenden a cuidar el agua y cultivar el futuro.</p>
     </div>
 
-</div>
-
-<section class="secciones">
-    <div class="card">📰 Noticias escolares</div>
-    <div class="card">💬 Opinión</div>
-    <div class="card">🎨 Cultura</div>
-    <div class="card">🌱 Eco-Gami</div>
-    <div class="card">🎤 Entrevistas</div>
-    <div class="card">💻 Tecno-Gami</div>
 </section>
 
-<section class="radio">
-    <h3>🎧 Escucha Radio GAMI</h3>
-    <p>Contenido creado por estudiantes</p>
+<!-- 💬 OPINIÓN -->
+<section id="opinion">
+    <h2>💬 Opinión</h2>
+    <p>Este espacio permite a los estudiantes expresar sus ideas y pensamientos con respeto.</p>
+</section>
+
+<!-- 🌱 ECO -->
+<section id="eco">
+    <h2>🌱 Eco-GAMI</h2>
+    <p>Cuidamos el agua, cultivamos el futuro.</p>
 </section>
 
 <footer>
-    Institución Educativa Gabriela Mistral | RADIOGAMI
+    Institución Educativa Gabriela Mistral - RADIOGAMI
 </footer>
 
 </body>
 </html>
-<img src="index.html">
