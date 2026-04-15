@@ -1,11 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>RADIOGAMI</title>
+<meta charset="UTF-8">
+<title>RADIOGAMI - Guardianes de tu opinión</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef2f7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #1f3c5a, #274c77);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.btn-radio {
+    background: #ffb703;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* MENÚ */
+nav {
+    background: #16324f;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+/* DESTACADO */
+.destacado {
+    background: #ffb703;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* CONTENIDO */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* NOTICIA PRINCIPAL */
+.principal {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.principal img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.principal button {
+    background: #1f3c5a;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* LATERAL */
+.lateral {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* SECCIONES */
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* RADIO */
+.radio {
+    background: #dbeafe;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #1f3c5a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
 </head>
+
 <body>
-<h1>🎙️ RADIOGAMI</h1>
-<p>Guardianes de tu opinión</p>
-<p>¡Tu página ya está en línea!</p>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo Colegio">
+        <div>
+            <h1>🎙️ RADIOGAMI</h1>
+            <p>Guardianes de tu opinión</p>
+        </div>
+    </div>
+    <button class="btn-radio">🔴 EN VIVO</button>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Noticias</a>
+    <a href="#">Opinión</a>
+    <a href="#">Cultura</a>
+    <a href="#">Eco-Gami</a>
+    <a href="#">Entrevistas</a>
+    <a href="#">Tecno-Gami</a>
+</nav>
+
+<div class="destacado">
+🚨 EDICIÓN DESTACADA: Guardianes de 4° lideran el cambio ambiental 🌱
+</div>
+
+<div class="container">
+
+    <div class="principal">
+        <img src="https://via.placeholder.com/600x300">
+        <h2>¿Por qué mi voz sí importa en el colegio?</h2>
+        <p>Estudiantes fortalecen liderazgo, respeto y participación escolar.</p>
+        <button>Leer más</button>
+    </div>
+
+    <div class="lateral">
+        <h3>🔥 Lo más leído</h3>
+        <p>📚 Nuevos libros en la biblioteca</p>
+        <p>🌳 Nuestro árbol cumple 20 años</p>
+        <p>🎧 Música que une generaciones</p>
+    </div>
+
+</div>
+
+<section class="secciones">
+    <div class="card">📰 Noticias escolares</div>
+    <div class="card">💬 Opinión</div>
+    <div class="card">🎨 Cultura</div>
+    <div class="card">🌱 Eco-Gami</div>
+    <div class="card">🎤 Entrevistas</div>
+    <div class="card">💻 Tecno-Gami</div>
+</section>
+
+<section class="radio">
+    <h3>🎧 Escucha Radio GAMI</h3>
+    <p>Contenido creado por estudiantes</p>
+</section>
+
+<footer>
+    Institución Educativa Gabriela Mistral | RADIOGAMI
+</footer>
+
 </body>
 </html>
